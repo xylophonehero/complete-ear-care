@@ -1,0 +1,30 @@
+/* Write your global styles here, in PostCSS syntax */
+@import "open-props/postcss/normalize";
+
+:root {
+  /* Colors */
+  --brand: var(--orange-6);
+
+  --text1: var(--gray-8);
+  --text2: var(--gray-7);
+
+  --surface1: var(--gray-2);
+  --surface2: var(--gray-0);
+  --surface3: var(--gray-1);
+  --surface4: var(--gray-3);
+
+  --gutter-width: 2rem;
+}
+
+h1,h2,h3,h4,p,dt {
+  color: var(--text1);
+}
+
+h5,h6,small,dd {
+  color: var(--text2);
+}
+
+.container {
+  width: min(var(--content-max, 120ch), 100% - var(--gutter-width));
+  margin-inline: auto;
+}
